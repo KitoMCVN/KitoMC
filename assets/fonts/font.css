@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Minecraft Bold";
+  src: url("Minecraftfivebold.eot");
+  src: url("Minecraftfivebold.eot?#iefix") format("embedded-opentype"),
+    url("Minecraftfivebold.woff2") format("woff2"),
+    url("Minecraftfivebold.woff") format("woff"),
+    url("Minecraftfivebold.ttf") format("truetype"),
+    url("Minecraftfivebold.svg#Minecraftfivebold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}

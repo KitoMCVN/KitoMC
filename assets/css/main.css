@@ -1,0 +1,174 @@
+@font-face {
+  font-family: "Minecraft Bold";
+  src: url("Minecraftfivebold.eot");
+  src: url("Minecraftfivebold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Minecraftfivebold.woff2") format("woff2"),
+    url("../fonts/Minecraftfivebold.woff") format("woff"),
+    url("../fonts/Minecraftfivebold.ttf") format("truetype"),
+    url("../fonts/Minecraftfivebold.svg#Minecraftfivebold") format("svg");
+  font-style: normal;
+  font-display: swap;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --grayColor: #222;
+  --lightGrayColor: #333;
+  --lightGrayColor2: #555;
+  --whiteColor: #fff;
+}
+
+body {
+  font-family: "Minecraft Bold";
+  background: rgb(182, 34, 195);
+  background: linear-gradient(
+    71deg,
+    rgba(182, 34, 195, 1) 0%,
+    rgba(125, 135, 190, 1) 47%,
+    rgba(45, 253, 181, 1) 100%
+  );
+}
+
+header {
+  width: 100vw;
+  z-index: 9998;
+  position: fixed;
+  box-shadow: 0 4px 1px #22222250;
+  background: var(--grayColor);
+}
+
+.menu {
+  display: flex;
+  max-width: 1200px;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 10px;
+  background: var(--grayColor);
+}
+
+.menuLink,
+.sideBarLink {
+  font-size: 12px;
+  color: var(--whiteColor);
+  margin: 0 20px;
+  text-decoration: none;
+  text-shadow: 0px 2px 0px var(--lightGrayColor2);
+  letter-spacing: 1.2px;
+}
+
+.menuLink:hover,
+.sideBarLink:hover {
+  color: rgb(150, 253, 236);
+}
+
+.menuIcon,
+.sideBarIcon {
+  width: 24px;
+  margin-right: 5px;
+  transform: translateY(2px);
+}
+
+.menuButtons {
+  display: flex;
+  width: 25px;
+  height: 25px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menuButton,
+.menuButton::after,
+.menuButton::before {
+  content: "";
+  width: 25px;
+  height: 4px;
+  border-radius: 4px;
+  transition: transform 70ms ease 200ms;
+  background-color: var(--whiteColor);
+}
+
+.menuButton::before {
+  position: absolute;
+  transform: translateY(8px);
+  transition: opacity 75ms ease;
+}
+
+.menuButton::after {
+  position: absolute;
+  transform: translateY(-8px);
+  transition: transform 75ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.menuOpen .menuButton::after {
+  transition: transform 75ms cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+  transform: rotate(-90deg);
+}
+
+.menuOpen .menuButton::before {
+  transition: opacity 75ms ease 0.12s;
+  opacity: 0;
+}
+
+.menuOpen .menuButton {
+  transform: rotate(45deg);
+}
+
+.sideBar {
+  width: 300px;
+  height: calc(100vh - 45px);
+  position: fixed;
+  top: 45px;
+  right: 0;
+  padding: 10px;
+  background: var(--lightGrayColor);
+  transform: translateX(100%);
+  transition: transform 0.5s;
+  z-index: 9997;
+}
+
+.menuOpen .sideBar {
+  transform: translateX(0);
+}
+
+.sideBarLink {
+  padding: 20px 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: var(--whiteColor);
+  padding: 0 10px;
+  margin: 0;
+  transition: background-color 0.15s;
+  user-select: none;
+  min-height: 40px;
+  gap: 10px;
+}
+
+.sideBarIcon {
+  transform: translateY(0px);
+}
+
+.sideBarLink:hover {
+  background-color: #444;
+}
+
+.sideBarLine {
+  background-color: var(--whiteColor);
+  width: calc(100% - 20px);
+  min-height: 2px;
+  box-shadow: -2px 2px 1px var(--lightGrayColor2);
+  margin: 10px;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 820px) {
+  .menuLink {
+    display: none;
+  }
+}
