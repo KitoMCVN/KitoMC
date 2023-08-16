@@ -1,27 +1,28 @@
-addEventListener("DOMContentLoaded", (event) => {
-  const header = `
+addEventListener('DOMContentLoaded', (event) => {
+    const header = `
 <nav class="menu">
         <div class="menuLogo"></div>
         <div class="menuLinks">
-          <a href="" class="menuLink"
+          <a href="https://kitomcvn.github.io/KitoMC" class="menuLink"
             ><img
-              src="assets/image/icons/homeIcon.png"
+              src="https://kitomcvn.github.io/KitoMC/assets/image/icons/homeIcon.png"
               class="menuIcon"
             />Home</a
           >
-          <a href="resoucePack" class="menuLink"
+          <a href="https://kitomcvn.github.io/KitoMC/resoucePack" class="menuLink"
             ><img
-              src="assets/image/icons/packIcon.png"
+              src="https://kitomcvn.github.io/KitoMC/assets/image/icons/packIcon.png"
               class="menuIcon"
             />Pack</a
           >
-          <a href="" class="menuLink"
-            ><img src="assets/image/icons/saveIcon.png" class="menuIcon" />Mini
+          <a href="https://kitomcvn.github.io/KitoMC/miniGame" class="menuLink"
+            ><img src="https://kitomcvn.github.io/KitoMC/assets/image/icons/saveIcon.png" class="menuIcon" />Mini
             Game</a
           >
-          <a href="" class="menuLink"
+
+          <a href="https://kitomcvn.github.io/KitoMC/tool" class="menuLink"
             ><img
-              src="assets/image/icons/toolIcon.png"
+              src="https://kitomcvn.github.io/KitoMC/assets/image/icons/toolIcon.png"
               class="menuIcon"
             />Tool</a
           >
@@ -32,36 +33,36 @@ addEventListener("DOMContentLoaded", (event) => {
       </nav>
       <div class="sideBar">
         <div class="sideBarBox">
-          <a class="sideBarLink" href=""
+          <a class="sideBarLink" href="https://kitomcvn.github.io/KitoMC"
             ><img
               class="sideBarIcon"
-              src="assets/image/icons/homeIcon.png"
+              src="https://kitomcvn.github.io/KitoMC/assets/image/icons/homeIcon.png"
               alt=""
             />Home</a
           >
 
           <div class="sideBarLine"></div>
 
-          <a class="sideBarLink" href="resoucePack"
+          <a class="sideBarLink" href="https://kitomcvn.github.io/KitoMC/resoucePack"
             ><img
               class="sideBarIcon"
-              src="assets/image/icons/packIcon.png"
+              src="https://kitomcvn.github.io/KitoMC/assets/image/icons/packIcon.png"
               alt=""
             />Resource Packs</a
           >
 
-          <a class="sideBarLink" href="">
-            <img class="sideBarIcon" src="assets/image/icons/mapIcon.png" />
+          <a class="sideBarLink" href="https://kitomcvn.github.io/KitoMC/maps">
+            <img class="sideBarIcon" src="https://kitomcvn.github.io/KitoMC/assets/image/icons/mapIcon.png" />
             Maps
           </a>
 
-          <a class="sideBarLink" href=""
-            ><img class="sideBarIcon" src="assets/image/icons/toolIcon.png" />
+          <a class="sideBarLink" href="https://kitomcvn.github.io/KitoMC/tool"
+            ><img class="sideBarIcon" src="https://kitomcvn.github.io/KitoMC/assets/image/icons/toolIcon.png" />
             Tool
           </a>
 
-          <a class="sideBarLink" href=""
-            ><img class="sideBarIcon" src="assets/image/icons/saveIcon.png" />
+          <a class="sideBarLink" href="https://kitomcvn.github.io/KitoMC/miniGame"
+            ><img class="sideBarIcon" src="https://kitomcvn.github.io/KitoMC/assets/image/icons/saveIcon.png" />
             Mini Game
           </a>
 
@@ -70,14 +71,14 @@ addEventListener("DOMContentLoaded", (event) => {
           <a class="sideBarLink" href="https://youtube.com/@kitomc">
             <img
               class="sideBarIcon"
-              src="assets/image/icons/youtubeIcon.png"
+              src="https://kitomcvn.github.io/KitoMC/assets/image/icons/youtubeIcon.png"
             />YoutuBe
           </a>
 
           <a class="sideBarLink" href=""
             ><img
               class="sideBarIcon"
-              src="assets/image/icons/discordIcon.png"
+              src="https://kitomcvn.github.io/KitoMC/assets/image/icons/discordIcon.png"
             />Discord</a
           >
         </div>
@@ -85,14 +86,14 @@ addEventListener("DOMContentLoaded", (event) => {
 
 `;
 
-  const headerContainer = document.querySelector("#header");
+    const headerContainer = document.querySelector('#header');
 
-  headerContainer.innerHTML = header;
+    headerContainer.innerHTML = header;
 
-  const menu = document.querySelector(".header");
-  const menuButton = document.querySelector(".menuButtons");
+    const menu = document.querySelector('.header');
+    const menuButton = document.querySelector('.menuButtons');
 
-  menuButton.addEventListener("click", () => {
-    menu.classList.toggle("menuOpen");
-  });
+    menuButton.addEventListener('click', () => {
+        menu.classList.toggle('menuOpen');
+    });
 });
