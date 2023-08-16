@@ -3,7 +3,7 @@
     max-width: 1200px;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 10px;
+    padding: 10px 20px;
     background: var(--grayColor);
 }
 
@@ -43,7 +43,7 @@
     content: '';
     width: 25px;
     height: 4px;
-    border-radius: 4px;
+    /* border-radius: 4px; */
     transition: transform 70ms ease 200ms;
     background-color: var(--whiteColor);
 }
@@ -126,4 +126,10 @@
     .menuLink {
         display: none;
     }
+}
+
+.menuLogo h1 {
+    font-size: 16px;
+    color: var(--whiteColor);
+    text-shadow: 0px 2px 0px var(--lightGrayColor2);
 }

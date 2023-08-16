@@ -1,7 +1,7 @@
 addEventListener('DOMContentLoaded', (event) => {
     const header = `
 <nav class="menu">
-        <div class="menuLogo"></div>
+        <div class="menuLogo"><h1>KitoMC!</h1></div>
         <div class="menuLinks">
           <a href="https://kitomcvn.github.io/KitoMC" class="menuLink"
             ><img

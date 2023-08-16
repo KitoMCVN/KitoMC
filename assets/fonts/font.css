@@ -1,12 +1,19 @@
 @font-face {
-  font-family: "Minecraft Bold";
-  src: url("Minecraftfivebold.eot");
-  src: url("Minecraftfivebold.eot?#iefix") format("embedded-opentype"),
-    url("Minecraftfivebold.woff2") format("woff2"),
-    url("Minecraftfivebold.woff") format("woff"),
-    url("Minecraftfivebold.ttf") format("truetype"),
-    url("Minecraftfivebold.svg#Minecraftfivebold") format("svg");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
+    font-family: 'Minecraft Bold';
+    src: url('Minecraftfivebold.eot');
+    src: url('Minecraftfivebold.eot?#iefix') format('embedded-opentype'), url('Minecraftfivebold.woff2') format('woff2'), url('Minecraftfivebold.woff') format('woff'), url('Minecraftfivebold.ttf') format('truetype'),
+        url('Minecraftfivebold.svg#Minecraftfivebold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FVF Fernando 08';
+    src: url('FVFFernando08.eot');
+    src: url('FVFFernando08.eot?#iefix') format('embedded-opentype'), url('FVFFernando08.woff2') format('woff2'), url('FVFFernando08.woff') format('woff'), url('FVFFernando08.ttf') format('truetype'),
+        url('FVFFernando08.svg#FVFFernando08') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }

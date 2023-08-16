@@ -7,6 +7,16 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'FVF Fernando 08';
+    src: url('../fonts/FVFFernando08.eot');
+    src: url('../fonts/FVFFernando08.eot?#iefix') format('embedded-opentype'), url('../FVFFernando08.woff2') format('woff2'), url('../fonts/FVFFernando08.woff') format('woff'), url('../fonts/FVFFernando08.ttf') format('truetype'),
+        url('../fonts/FVFFernando08.svg#FVFFernando08') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 *,
 ::after,
 ::before {
@@ -23,19 +33,65 @@
 
 body {
     font-family: 'Minecraft Bold';
-    background: rgb(182, 34, 195);
-    background: linear-gradient(71deg, rgba(182, 34, 195, 1) 0%, rgba(125, 135, 190, 1) 47%, rgba(45, 253, 181, 1) 100%);
+    background: #444;
+    cursor: url(../image/icons/cursorIcon.png) 1 1, auto;
+}
+
+a {
+    cursor: url(../image/icons/hoverIcon.png) 1 1, pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    cursor: url(../image/icons/textIcon.png) 1 1, text;
 }
 
 header {
     width: 100vw;
     z-index: 9998;
     position: fixed;
+    top: 0;
+    left: 0;
     box-shadow: 0 4px 1px #22222250;
     background: var(--grayColor);
 }
 
 .pageContainer {
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 45px);
+    margin-top: 45px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--lightGrayColor);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--grayColor);
+}
+
+.boxContainer {
+    width: 100vw;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-shadow: 0 4px 1px #22222250;
+    color: #fff;
 }
