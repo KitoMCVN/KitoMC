@@ -14,6 +14,7 @@
 .container a {
     padding: 0 0 0 40px;
     min-height: 1px;
+    margin: 2px 0;
 }
 
 .container a:hover {
@@ -21,6 +22,100 @@
 }
 
 .homeBox1 {
-    background-image: url(https://www.blockbench.net/_nuxt/img/4.2.f435437.png);
+    background-image: url(https://www.blockbench.net/_nuxt/img/4.7.5fa359e.png);
     box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+.homeBox2 {
+    padding-top: 30px;
+    height: auto !important;
+    padding-bottom: 30px;
+}
+
+.homeBox2 .imgBox {
+    height: 290px;
+    width: 480px;
+    min-width: 480px;
+    margin-right: 20px;
+}
+
+.homeBox2 .contentBox {
+    margin: 20px;
+    flex: 1;
+    letter-spacing: 1.2px;
+}
+
+.homeBox2 .container {
+    display: flex;
+    padding: 10px 20px;
+}
+
+.homeBox2 .container p {
+    font-family: 'FVF Fernando 08';
+    /* font-family: 'Open Sans', sans-serif; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 0;
+    line-height: 20px;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.imgBox img {
+    width: 100%;
+    height: auto;
+    box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.05);
+}
+
+.homeContainer {
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 900px) {
+    .homeBox2 .contentBox {
+        margin: 0 20px;
+    }
+
+    .homeBox2 .imgBox {
+        height: 250px;
+        width: 420px;
+        min-width: 420px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .homeBox2 .container {
+        display: block;
+        text-align: center;
+    }
+
+    .homeBox2 .imgBox {
+        height: auto;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 20px;
+        min-width: 0;
+    }
+
+    .homeBox2 .imgBox img {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .homeBox2 .contentBox {
+        margin-top: 10px;
+    }
+}
+
+.contentBox a img {
+    width: 20px;
+    margin-right: 6px;
+}
+
+.contentLink {
+    padding: 0 !important;
+    font-size: 10px !important;
+    text-decoration: none;
+    color: #66a852;
 }
