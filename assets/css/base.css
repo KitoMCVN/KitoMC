@@ -136,7 +136,7 @@
 
 footer {
     display: block;
-    padding: 100px 0 0 0;
+    padding: 20px 0 0 0;
 }
 
 .footerTop {
@@ -150,4 +150,25 @@ footer {
     display: flex;
     justify-content: space-between;
     letter-spacing: 1.2px;
+}
+
+@media screen and (max-width: 700px) {
+    .footerTop .container {
+        display: block;
+        text-align: center;
+    }
+}
+
+.overlay {
+    width: 100vw;
+    height: 100vw;
+    position: absolute;
+    z-index: -9998;
+    background: rgba(0, 0, 0, 0);
+    display: none;
+}
+
+.menuOpen .overlay {
+    display: block;
+    background: rgba(0, 0, 0, 0.8);
 }

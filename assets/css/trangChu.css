@@ -41,6 +41,7 @@
 
 .homeBox2 .contentBox {
     margin: 20px;
+    margin-top: 0;
     flex: 1;
     letter-spacing: 1.2px;
 }
@@ -48,17 +49,16 @@
 .homeBox2 .container {
     display: flex;
     padding: 10px 20px;
+    align-items: center;
 }
 
 .homeBox2 .container p {
     font-family: 'FVF Fernando 08';
-    /* font-family: 'Open Sans', sans-serif; */
     margin-top: 10px;
     margin-bottom: 10px;
     letter-spacing: 0;
     line-height: 20px;
     font-size: 14px;
-    text-align: justify;
 }
 
 .imgBox img {
@@ -118,4 +118,34 @@
     font-size: 10px !important;
     text-decoration: none;
     color: #66a852;
+}
+
+.slideShow {
+    height: auto !important;
+}
+
+.slideShow .container {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+}
+
+.homeSlideShow {
+    flex: 1;
+    padding: 0 40px;
+}
+
+.slideShowBnt {
+    height: 50px;
+    width: 50px;
+    background: transparent;
+    border: none;
+}
+
+.slideShowBnt img {
+    height: 40px;
+}
+
+.homeSlideImg {
+    width: 100%;
 }

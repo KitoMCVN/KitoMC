@@ -84,6 +84,8 @@ addEventListener('DOMContentLoaded', (event) => {
         </div>
       </div>
 
+      <div class="overlay"></div>
+
 `;
 
     const headerContainer = document.querySelector('#header');
@@ -96,4 +98,19 @@ addEventListener('DOMContentLoaded', (event) => {
     menuButton.addEventListener('click', () => {
         menu.classList.toggle('menuOpen');
     });
+});
+
+addEventListener('DOMContentLoaded', (event) => {
+    const footer = `
+              <div class="footerTop">
+                    <div class="container">
+                        <p>© KitoMC 2023</p>
+                        <p>Make by KitoMC & ChatGPT</p>
+                    </div>
+                </div>
+  `;
+
+    const footerContainer = document.querySelector('#footer');
+
+    footerContainer.innerHTML = footer;
 });

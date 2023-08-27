@@ -1,0 +1,73 @@
+.featuredPack {
+    padding: 40px;
+}
+
+.featuredItem:hover {
+    background: #393939;
+}
+
+.featuredItem {
+    display: flex;
+    margin-top: 16px;
+    padding: 20px;
+    background-color: var(--lightGrayColor);
+}
+
+.featuredPack h2 {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+
+.featuredImg {
+    height: 160px;
+    width: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.featuredImg {
+    background: url(https://img.redbull.com/images/c_fill,w_1200,h_630,g_auto,f_auto,q_auto/redbullcom/2020/4/28/bjoyslzjb3uxqyg82uz2/minecraft);
+    background-size: cover;
+}
+
+.featuredImg:hover {
+    background-position: right;
+}
+
+.featuredImg img {
+    width: 90%;
+}
+
+.featuredContent {
+    color: #fff;
+    margin-left: 20px;
+}
+
+.featuredContent p {
+    font-size: 14px;
+    font-family: 'FVF Fernando 08';
+    line-height: 16px;
+}
+
+.featuredItem h5 {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 800px) {
+    .featuredItem {
+        display: block;
+        text-align: center;
+    }
+
+    .featuredImg {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .featuredPack {
+        padding: 40px 20px;
+    }
+}

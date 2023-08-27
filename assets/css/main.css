@@ -44,7 +44,8 @@ body {
     -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
 }
 
-a {
+a,
+button {
     cursor: url(../image/icons/hoverIcon.png) 1 1, pointer;
 }
 
@@ -66,15 +67,15 @@ header {
     overflow-x: hidden;
 }
 
-::-webkit-scrollbar {
+.pageContainer::-webkit-scrollbar {
     width: 10px;
 }
 
-::-webkit-scrollbar-track {
+.pageContainer::-webkit-scrollbar-track {
     background: var(--lightGrayColor);
 }
 
-::-webkit-scrollbar-thumb {
+.pageContainer::-webkit-scrollbar-thumb {
     background: var(--grayColor);
 }
 
